@@ -281,6 +281,7 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 	.col-xs-12 blockquote p {font-size:33px; line-height:110%; color:#767676; margin-top:40px; position:relative;   z-index:10;}
 	.col-xs-12 blockquote {padding:0; margin: 100px 0 40px;}
 	.col-md-8 blockquote:before {
+		border-left: 20;
 		z-index:1;
 		content: '“';
 		font-size: 300px;
