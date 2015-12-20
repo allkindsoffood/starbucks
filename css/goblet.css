@@ -17,7 +17,7 @@ h4 {font-size: 16px;}
 .zhero-textbox {color:#fff; margin-top:110px;}
 .zhero-textbox-byline {border-bottom:1px solid #ccc; color:#e7e7e7; font-size:14px; padding-bottom:15px; letter-spacing:1px;}
 .zhero-textbox-byline-highlight {color:#ffff00;}
-.zhero-textbox-headline {margin-top:0px !important; font-Size:50px;}
+.zhero-textbox-headline {margin-top:0px !important; font-Size:55px;}
 
 .zhero-cta {background-color:#0054ff;  padding-left:70px; padding-right:70px; margin-top:10px;font-weight:bold;}
 .zhero-phone-example .zhero-device-image {postion:relative; height:500px; margin-top:30px; width:435px; background-repeat: no-repeat; background-image:url('../images/hand.png'); background-size:435px 500px;}
@@ -84,7 +84,7 @@ em {font-weight:bold;}
 h2 {color:#999; margin-top:50px;}
 h1 {margin-top:80px !important; font-size:48px; }
 
-p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom:20px;}
+p, div.p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom:20px;}
 .col-xs-4 P, .col-sm-4 p {font-size:14px; margin-bottom:10px; line-height:140%;}
 .col-xs-4 P + P {margin-top:-15px;}
 
@@ -93,12 +93,12 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 .col-md-8 li {font-size: 20px; line-height:140%; margin-bottom:5px; color:#333; font-weight:300; }
 .col-md-8 ul {margin-bottom:20px; padding-left:20px;}
 
-.col-md-8 blockquote  {border-left:0; position:relative; margin: 140px 0 80px;;}
+.col-md-8 blockquote  {border-left:0; position:relative; margin: 40px 0 80px;}
 .col-md-8 blockquote:before {
   
     
     content: '“';
-    font-size: 400px;
+    font-size: 100px;
     position: absolute;
     Font-family: times, courier, serif;
     width: 70px;
@@ -111,7 +111,7 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 .col-md-8 blockquote:after {
 
     content: '”';
-    font-size: 400px;
+    font-size: 100px;
     position: absolute;
     Font-family: times, courier, serif;
     width: 70px;
@@ -122,7 +122,7 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 }
 
 
-.col-md-8 blockquote p {font-size:36px;  margin-top:20px; font-weight:200; text-align:center; letter-spacing:0px; line-height: 115%;
+.col-md-8 blockquote p {font-size:26px;  margin-top:0px; font-weight:200; text-align:center; letter-spacing:0px; line-height: 115%;
 	position:relative; z-index:10;}
 .col-md-8 blockquote footer {font-size: 20px; font-weight:200; text-align:center; margin-top:-15px;}
 
@@ -201,7 +201,7 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 
 @media (max-width: 767px) { 
 	.page-header {font-size: 30px; margin-top:70px !important; border-bottom:0;  margin-bottom:0;}
-	.navbar-default .navbar-brand   {font-size: 14px;}
+	.navbar-default .navbar-brand   {color:#fff; font-size:24px;}
 	.navbar-toggle {border:0;}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color:#333;}
 	.navbar-default .navbar-collapse {border-color:#333;}
@@ -215,10 +215,15 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {max-height:none;}
 	
 	.zpagefooter .zcredit .thumb + p {max-width: calc(100% - 100px);}	
-	.zhero-textbox {margin-top:20px; border:0;}
-	.zhero-textbox-byline {border:0; margin-bottom:0; text-align:center;}
-	.zhero-textbox-headline {font-size:30px; margin-top:0;text-align:center;}
-	.zhero-textbox {text-align:center;}
+	.zhero-textbox {z-index:20; position:relative;}
+.zhero-textbox-date {padding-top:5px; }
+.zhero-textbox-headline {font-size:55px;}
+.zhero-textbox-subhead {font-size:24px; line-height:115%; margin-top:20px; margin-bottom:40px; font-weight:200; color:#999;}
+
+.zhero-textbox-byline  {font-weight:normal; font-size:17px; letter-spacing:0;  margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #666;}
+.zhero-textbox-byline .byline-divider {padding:0 10px; color:#666;}
+.zhero-textbox-byline-highlight {font-weight:bold;}	.zhero-textbox-headline {font-size:30px; margin-top:0;text-align:center;}
+
 	.zhero-scrollhint { margin-top: 10px;}
 	.zhero-textbox-byline {font-size:12px; margin-bottom:0; padding-bottom:5px;}
 	.zhero-phone-example .zhero-device-image { 
@@ -281,10 +286,9 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 	.col-xs-12 blockquote p {font-size:33px; line-height:110%; color:#767676; margin-top:40px; position:relative;   z-index:10;}
 	.col-xs-12 blockquote {padding:0; margin: 100px 0 40px;}
 	.col-md-8 blockquote:before {
-		border-left: 20;
 		z-index:1;
 		content: '“';
-		font-size: 300px;
+		font-size: 100px;
 		position: absolute;
 		Font-family: times, courier, serif;
 		width: 70px;
@@ -310,7 +314,8 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 	.zhero-computer-example .zhero-video-container {height:auto;}
 	.zhero-computer-example .zhero-video-container {background-color:#666;position:absolute; overflow:hidden; top:0; left:0; bottom:0; right:0;  }
 	.zhero-computer-example .zhero-video-container video {position:absolute; min-width:200%; min-height:200%; }
-	.zhero-computer-example .zhero-textbox {margin-top: 20px;}
+	.zhero-computer-example .zhero-textbox {margin-top: 20px; z-index:20; position:relative;}
+	.zhero-computer-example .zhero-textbox-date {padding-top:5px; }
 	.zhero-computer-example .zhero-device-image { 
 		/*text-align:center; margin-left: calc(( 100% / 2 ) - 165px ); 
 		width: calc(100vw - (( 100% / 2 ) - 165px ) );	*/
@@ -333,13 +338,13 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 }
 @media (min-width: 768px) and (max-width: 991px) { 
 
-	.zhero-textbox-headline {font-size:38px;}
+	.zhero-textbox-headline {font-size:55px;}
 	.zhero-device-image {position:relative; left:30px;}
 	.giant-cta {font-size:28px;}
 	p {font-size:17px;}
 	.col-md-8 li  {font-size:17px; line-height:140%; color:#333;  }
 	.col-md-8 ul {padding-left:20px;}
-	.zhero-textbox-headline {font-size:34px;}
+	.zhero-textbox-headline {font-size:55px;}
 	h1 {font-size: 30px; margin-top:60px !important;}
 	h2 {font-size:24px;}
 	.zhero-computer-example .zhero-device-image { margin-top:30px; margin-left:0;}
@@ -356,7 +361,7 @@ p  {font-size:20px; line-height:160%; color:#333; font-weight:300; margin-bottom
 	.zhero-scrollhint .glyphicon {font-size:20px; position:relative; left:3px; top:4px;}
 }
 @media (min-width: 992px) and (max-width: 1199px) { 
-	.zhero-textbox-headline {font-size:38px;}
+	.zhero-textbox-headline {font-size:55px;}
 	h1 {font-size: 32px; margin-top:60px !important;}
 	h2 {font-size:28px;}
 	p {font-size:18px;}
