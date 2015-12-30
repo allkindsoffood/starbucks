@@ -1281,7 +1281,7 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 100px 20px;
+  padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eee;
@@ -5053,7 +5053,6 @@ a.list-group-item-danger.active:focus {
 }
 .panel > .table,
 .panel > .table-responsive > .table,
-.panel > .panel-collapse > .table {
   margin-bottom: 0;
 }
 .panel > .table:first-child,
